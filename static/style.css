@@ -14,8 +14,16 @@ header {
 }
 
 .terminal {
-    background-color: #000;
+    background-color: #3f3f3f;
     color: #fff;
     padding: 10px;
     font-family: monospace;
+    width: 600px; /* Adjust as needed */
+    height: 350px; /* Adjust as needed */
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.text-dark-green {
+    color: #044B05; /* This is a dark green color */
 }
