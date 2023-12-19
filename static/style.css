@@ -18,8 +18,8 @@ header {
     color: #fff;
     padding: 10px;
     font-family: monospace;
-    width: 600px; /* Adjust as needed */
-    height: 350px; /* Adjust as needed */
+    width: 25vw; 
+    height: 20vh; 
     overflow: auto;
     border-radius: 10px;
 }
