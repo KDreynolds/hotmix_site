@@ -9,6 +9,10 @@ data = [{"id": 1, "name": "HoTMiX"}, {"id": 2, "name": "is"}, {"id": 3, "name": 
 def index():
     return render_template('index.html', items=data)
 
+@app.route('/templates/docs.html')
+def docs():
+    return render_template('docs.html')
+
 @app.route('/data-table')
 def data_table():
     return render_template('data_table.html', items=data)
