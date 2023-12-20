@@ -9,15 +9,15 @@ body {
 header {
     color: black;
 }
+
 #main-content {
     flex: 1;
-    color: #044B05;
     position: relative;
     z-index: 1;
 }
 
 .text-dark-green {
-    color: #044B05; /* This is a dark green color */
+    color: #044B05; 
 }
 
 .logo-container {
@@ -56,4 +56,13 @@ header {
 #navbar-example2 .nav-link.active {
     color: #ffffff; /* This is your green color for the active link */
     background-color: #ff7300; /* This is your orange color for the active link background */
+}
+
+h2 {
+    color: #044B05;
+}
+
+footer {
+    background-color: #044B05;
+    color: #ffffff;
 }
