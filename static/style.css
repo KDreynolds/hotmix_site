@@ -11,6 +11,11 @@ header {
 }
 #main-content {
     flex: 1;
+    color: #044B05;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .terminal {
@@ -18,8 +23,8 @@ header {
     color: #fff;
     padding: 10px;
     font-family: monospace;
-    width: 25vw; 
-    height: 20vh; 
+    width: 25vw; /* Adjust as needed */
+    height: 20vh; /* Adjust as needed */
     overflow: auto;
     border-radius: 10px;
 }
@@ -27,3 +32,36 @@ header {
 .text-dark-green {
     color: #044B05; /* This is a dark green color */
 }
+
+#doc-sidebar .nav-link {
+    color: #333; /* Change as needed */
+    background-color: #f5f5f5; /* Change as needed */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+#doc-sidebar .nav-link:hover {
+    color: #fff; /* Change as needed */
+    background-color: #ff7300; /* Change as needed */
+}
+
+#doc-sidebar .nav-link.active {
+    color: #ff7300; /* Change as needed */
+    background-color: #044B05; /* Change as needed */
+}
+
+.logo-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo-container-docs {
+    padding-top: 50px /* Adjust as needed */ !important;
+    margin-left: -240px /* Adjust as needed */!important;
+    padding-bottom: 0px !important;
+}
+
