@@ -5,6 +5,13 @@ app = Flask(__name__)
 # Temporary data store. In a real app, this would be a database.
 data = [{"id": 1, "name": "HoTMiX"}, {"id": 2, "name": "is"}, {"id": 3, "name": "Horse"}]
 
+@app.before_request
+def before_request():
+    if 'X-Forwarded-Proto' in request.headers:
+        if request.headers['X-Forwarded-Proto'] == 'http' and not app.debug:
+            url = request.url.replace('http://', 'https://', 1)
+            return redirect(url, code=301)
+
 @app.route('/')
 def index():
     return render_template('index.html', items=data)
