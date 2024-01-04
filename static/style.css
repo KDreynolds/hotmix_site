@@ -18,12 +18,34 @@ header {
     color: #fff;
     padding: 10px;
     font-family: monospace;
-    width: 25vw; 
-    height: 20vh; 
+    width: 100%; 
+    height: auto; 
     overflow: auto;
     border-radius: 10px;
 }
 
 .text-dark-green {
     color: #044B05; /* This is a dark green color */
+}
+
+.logo {
+    width: 15%; /* Adjust as needed */
+    height: auto;
+}
+
+.logo-small {
+    width: 35%; /* Adjust as needed */
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .terminal {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .terminal {
+        width: 25vw;
+    }
 }
