@@ -7,26 +7,63 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/style.css">
 </head>
-<body>
-     <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-				<img src="/static/logo-no-background.png" alt="HoTMiXer logo" height="40" width="211">
-			</a>
-			<ul class="navbar-nav ms-auto">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/templates/index.html">
+                <img src="/static/logo-no-background.png" alt="HoTMiXer logo" height="40" width="211">
+            </a>
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#get-started">Get Started</a>
+                    <a class="nav-link" href="/templates/docs.html#getting-started">Get Started</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#docs">Docs</a>
+                    <a class="nav-link" href="/templates/docs.html">Docs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#help">Help</a>
+                    <a class="nav-link" href="/templates/docs.html#contact-support">Help</a>
                 </li>
             </ul>
-		</div>
-	</nav>
+        </div>
+    </nav>
+
+    <nav id="navbar-example2" class="navbar px-3">
+        <div class="container-lg justify-content-center flex-nowrap">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#installation">Installation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#getting-started">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#usage-examples">Usage Examples</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#backend-technologies">Backend Technologies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contributing">Contributing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#license">License</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#acknowledgments">Acknowledgments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-support">Contact and Support</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
 
     <main id="main-content" class="container py-4">
         <header class="text-center py-5">
@@ -71,6 +108,12 @@
             <p>Example commands:</p>
             <pre><code>hotmix create blog --backend flask</code></pre>
             <p>This command sets up a new blog project using Flask as the backend.</p>
+            <p>HoTMiX supports the following backends:</p>
+            <ul>
+                <li>Python - Flask</li>
+                <li>Golang - Gin</li>
+                <li>JavaScript - Express</li>
+            </ul>
         </section>
         
 
@@ -120,18 +163,36 @@
                 <li>GitHub Issues: <a href="https://github.com/KDreynolds/HoTMiX/issues">HoTMiX GitHub Issues</a></li>
                 <li>Twitter: <a href="https://twitter.com/imyerf">@imYerf</a></li>
             </ul>
-            <p>We strive to respond to queries and resolve issues promptly and appreciate your feedback and suggestions for improving HoTMiX.</p>
+            <p>We strive to respond to queries and resolve issues promptly and appreciate your feedback and suggestions for improving HoTMiXer.</p>
         </section>
         
 
     </main>
 
     <!-- Footer (same as main page) -->
-    <footer class="bg-light text-center py-3">
+    <footer class="text-center py-3">
         <!-- Footer content -->
     </footer>
 
     <!-- Bootstrap and HTMX scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <script>
+            window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar-example2");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    </script>
+
+</body>
+</html>
