@@ -1,3 +1,4 @@
+# Python
 __pycache__
 __pycache__/
 
@@ -10,7 +11,7 @@ cypress/results
 # Node
 node_modules
 
-# IDE files (optional, depending on your setup)
+# IDE files 
 .vscode
 .idea
 
