@@ -75,6 +75,39 @@ header {
     color: #0056b3;
 }
 
+.bg-light {
+    background-color: #f0f0f0; 
+}
+
+.text-dark-green {
+    color: #025a02; 
+}
+
+.text-secondary {
+    color: #494949 !important; 
+}
+
+#quick-scaffolding,
+#backend-options,
+#htmx-integration {
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+#quick-scaffolding a,
+#backend-options a,
+#htmx-integration a {
+    color: #0000EE; 
+}
+
+#quick-scaffolding a:hover,
+#backend-options a:hover,
+#htmx-integration a:hover {
+    color: #551A8B; 
+}
+
 .sticky-nav {
     position: sticky;
     top: 0;
