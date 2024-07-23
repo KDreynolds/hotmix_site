@@ -1,2 +1,19 @@
 __pycache__
 __pycache__/
+
+# Cypress
+cypress/videos
+cypress/screenshots
+cypress/downloads
+cypress/results
+
+# Node
+node_modules
+
+# IDE files (optional, depending on your setup)
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
