@@ -29,5 +29,12 @@ def display_markdown():
     
     return render_template('iosplan.html', content=content)
 
+@app.route('/webplan')
+def display_markdown_web():
+    with open('static/webplan.md', 'r') as f:
+        content = f.read()
+
+    return render_template('webplan.html', content=content)
+
 if __name__ == '__main__':
     app.run(debug=True)
